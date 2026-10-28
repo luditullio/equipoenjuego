@@ -1,0 +1,283 @@
+{
+  "version": "1.0.0-definitiva",
+  "actualizado": "2026-10-28",
+  "_nota": "Vínculos entre cartas prácticas (G/I) y cartas Teóricas (T). Curaduría APROBADA por Luciana/equipo el 2026-10-28: las relaciones son DEFINITIVAS («provisorio: false»), por lo que la interfaz ya no muestra el aviso «Vínculo provisorio, pendiente de curaduría». Los arrays vacíos indican que no existe una ficha específica para esa práctica: son deliberados, no un error técnico. Las relaciones complementarias no afirman identidad entre modelos. NO deben inferirse a partir de los JPG/PNG. Este archivo es independiente de los nombres de archivo: si se renombran los PNG, no hace falta tocarlo.",
+  "_formato": {
+    "practica": "ID de carta práctica: G01–G30 o I01–I15",
+    "teoricas": "array de IDs T01–T16 (0, 1 o varias)",
+    "provisorio": "false cuando la curaduría está cerrada (relación definitiva); true mientras siga pendiente",
+    "nota": "texto libre opcional que se muestra junto al vínculo"
+  },
+  "relaciones": [
+    {
+      "practica": "G01",
+      "teoricas": ["T02", "T03"],
+      "provisorio": false,
+      "nota": "T02 explica la ronda inicial; T03 apoya la escucha empática durante esa ronda."
+    },
+    {
+      "practica": "G02",
+      "teoricas": ["T02"],
+      "provisorio": false,
+      "nota": "Es la ronda de cierre que describe T02."
+    },
+    {
+      "practica": "G03",
+      "teoricas": ["T03"],
+      "provisorio": false,
+      "nota": "T03 ayuda a verificar información y hacer preguntas. No presenta esta técnica de dibujo ni un modelo específico de transmisión."
+    },
+    {
+      "practica": "G04",
+      "teoricas": ["T16"],
+      "provisorio": false,
+      "nota": "T16 puede orientar sobre qué apoyos valora cada persona. No es una teoría específica de reconocimiento ni convierte la actividad en un test de perfiles."
+    },
+    {
+      "practica": "G05",
+      "teoricas": ["T06"],
+      "provisorio": false,
+      "nota": "Coincide con identificar disparadores y recuperar capacidad de respuesta antes de actuar."
+    },
+    {
+      "practica": "G06",
+      "teoricas": ["T03"],
+      "provisorio": false,
+      "nota": "T03 aporta escucha factual y verificación. No equivale a una ficha específica de modelos mentales, que no existe en este mazo."
+    },
+    {
+      "practica": "G07",
+      "teoricas": ["T03"],
+      "provisorio": false,
+      "nota": "La perspectiva del otro y la comprensión de su experiencia corresponden a escucha empática."
+    },
+    {
+      "practica": "G08",
+      "teoricas": ["T03"],
+      "provisorio": false,
+      "nota": "La escucha generativa puede apoyar la construcción conjunta. T03 no explica la técnica de improvisación «sí, y»."
+    },
+    {
+      "practica": "G09",
+      "teoricas": [],
+      "provisorio": false,
+      "nota": "No hay una ficha de reuniones efectivas. No asociar a un modelo de liderazgo solo porque el ejercicio ocurre en equipo."
+    },
+    {
+      "practica": "G10",
+      "teoricas": ["T03"],
+      "provisorio": false,
+      "nota": "La escucha factual y las preguntas de comprensión sirven como apoyo. No remitir a SBI/CNV como si todo pedido fuera feedback o un conflicto."
+    },
+    {
+      "practica": "G11",
+      "teoricas": ["T16"],
+      "provisorio": false,
+      "nota": "T16 puede complementar la conversación sobre qué motiva y qué reconocimiento resulta valioso, sin clasificar a nadie ni aplicar un test."
+    },
+    {
+      "practica": "G12",
+      "teoricas": ["T03"],
+      "provisorio": false,
+      "nota": "T03 apoya la escucha y verificación del mensaje; no sustituye una teoría específica de claridad de pedidos."
+    },
+    {
+      "practica": "G13",
+      "teoricas": ["T10"],
+      "provisorio": false,
+      "nota": "Ajusta dirección, apoyo y autonomía a una situación concreta."
+    },
+    {
+      "practica": "G14",
+      "teoricas": ["T08"],
+      "provisorio": false,
+      "nota": "T08 aporta confianza, compromiso y responsabilidad en el equipo. No identificar confianza con seguridad psicológica como si fueran términos idénticos ni diagnosticar al grupo."
+    },
+    {
+      "practica": "G15",
+      "teoricas": [],
+      "provisorio": false,
+      "nota": "No hay una ficha específica de roles e interdependencia. No usar T08 solo por tratarse de trabajo en equipo."
+    },
+    {
+      "practica": "G16",
+      "teoricas": [],
+      "provisorio": false,
+      "nota": "La técnica es una retrospectiva. T09 describe etapas del desarrollo de un equipo, no esta herramienta de retrospectiva."
+    },
+    {
+      "practica": "G17",
+      "teoricas": [],
+      "provisorio": false,
+      "nota": "Retrospectiva y mejora continua no tienen ficha propia. No equiparar automáticamente mejora continua con mentalidad de crecimiento."
+    },
+    {
+      "practica": "G18",
+      "teoricas": ["T12"],
+      "provisorio": false,
+      "nota": "La secuencia de perspectivas se apoya explícitamente en Seis sombreros."
+    },
+    {
+      "practica": "G19",
+      "teoricas": [],
+      "provisorio": false,
+      "nota": "Pensamiento divergente/convergente no es lo mismo que recorrer los seis sombreros. No hay ficha específica de esa técnica."
+    },
+    {
+      "practica": "G20",
+      "teoricas": ["T03"],
+      "provisorio": false,
+      "nota": "La escucha factual permite revisar supuestos con datos y otras perspectivas. No vincular al modelo de participación de T13 por el solo hecho de responder en grupo."
+    },
+    {
+      "practica": "G21",
+      "teoricas": ["T16"],
+      "provisorio": false,
+      "nota": "Los cuatro perfiles están desarrollados expresamente en T16. No confundir con T14/DISC ni con T13/Vroom y decisiones."
+    },
+    {
+      "practica": "G22",
+      "teoricas": ["T03"],
+      "provisorio": false,
+      "nota": "La escucha generativa puede apoyar la construcción de una posibilidad común. T03 no contiene una técnica específica de ideación escrita."
+    },
+    {
+      "practica": "G23",
+      "teoricas": ["T03"],
+      "provisorio": false,
+      "nota": "T03 apoya abrir y verificar perspectivas. La figura/fondo no identifica perfiles DISC, por lo que no se recomienda T14."
+    },
+    {
+      "practica": "G24",
+      "teoricas": ["T09"],
+      "provisorio": false,
+      "nota": "La etapa de formación de T09 puede orientar el acompañamiento y la claridad inicial. No es un manual de onboarding ni de pensamiento visual."
+    },
+    {
+      "practica": "G25",
+      "teoricas": ["T15"],
+      "provisorio": false,
+      "nota": "T15 trata la cultura que construyen las prácticas y su coherencia con los valores."
+    },
+    {
+      "practica": "G26",
+      "teoricas": ["T07"],
+      "provisorio": false,
+      "nota": "Aplica explícitamente la distinción desarrollada en T07."
+    },
+    {
+      "practica": "G27",
+      "teoricas": ["T08"],
+      "provisorio": false,
+      "nota": "T08 puede apoyar compromiso y responsabilidad compartida. No presenta una técnica de acuerdos ni de reuniones, por lo que se marca como complemento."
+    },
+    {
+      "practica": "G28",
+      "teoricas": ["T03", "T08"],
+      "provisorio": false,
+      "nota": "T03 apoya escuchar para comprender; T08 complementa la construcción de confianza. No usar T08 para diagnosticar al equipo."
+    },
+    {
+      "practica": "G29",
+      "teoricas": ["T03"],
+      "provisorio": false,
+      "nota": "La escucha empática y generativa permite incorporar esa perspectiva. No remitir a DISC solo por la palabra diversidad."
+    },
+    {
+      "practica": "G30",
+      "teoricas": [],
+      "provisorio": false,
+      "nota": "Experimentación y mejora continua no tienen ficha específica. No reemplazar por GROW, que aquí está desarrollado como conversación de desarrollo."
+    },
+    {
+      "practica": "I01",
+      "teoricas": ["T01", "T11"],
+      "provisorio": false,
+      "nota": "T01 es el encuadre principal. T11 solo complementa la formulación de preguntas, presente también en el pie de I01: no transforma automáticamente un cafecito en coaching."
+    },
+    {
+      "practica": "I02",
+      "teoricas": ["T06"],
+      "provisorio": false,
+      "nota": "Es la intervención ante disparadores y reacciones que desarrolla T06."
+    },
+    {
+      "practica": "I03",
+      "teoricas": ["T03"],
+      "provisorio": false,
+      "nota": "La escucha factual de T03 ayuda a revisar supuestos. No es la comparación de capacidades fijas/desarrollables de T07; falta una ficha específica de modelos mentales."
+    },
+    {
+      "practica": "I04",
+      "teoricas": ["T04"],
+      "provisorio": false,
+      "nota": "Se corresponde con el encuadre SBI y CNV del pie de I04 y de T04."
+    },
+    {
+      "practica": "I05",
+      "teoricas": ["T05"],
+      "provisorio": false,
+      "nota": "Trabaja los dos ejes de Radical Candor de manera explícita."
+    },
+    {
+      "practica": "I06",
+      "teoricas": ["T10"],
+      "provisorio": false,
+      "nota": "T10 incluye delegación con seguimiento y ajuste de apoyo. No requiere inventar otra ficha de delegación."
+    },
+    {
+      "practica": "I07",
+      "teoricas": ["T10"],
+      "provisorio": false,
+      "nota": "Aplica directamente el modelo de liderazgo situacional."
+    },
+    {
+      "practica": "I08",
+      "teoricas": ["T08"],
+      "provisorio": false,
+      "nota": "La pirámide y sus cinco componentes están desarrollados en T08."
+    },
+    {
+      "practica": "I09",
+      "teoricas": [],
+      "provisorio": false,
+      "nota": "No hay una ficha específica de sesgos o equidad de oportunidades. T14 trata preferencias conductuales, no cómo asignar oportunidades; I09 incluso advierte no inferir por perfil DISC."
+    },
+    {
+      "practica": "I10",
+      "teoricas": ["T12"],
+      "provisorio": false,
+      "nota": "Aplica directamente las seis perspectivas de T12."
+    },
+    {
+      "practica": "I11",
+      "teoricas": ["T13"],
+      "provisorio": false,
+      "nota": "El desarrollo coincide con T13. El pie «Esfuerzo x Rendimiento x Recompensa» no coincide con ese desarrollo: registrar para revisión, no copiar esa fórmula como explicación del vínculo."
+    },
+    {
+      "practica": "I12",
+      "teoricas": ["T11"],
+      "provisorio": false,
+      "nota": "Utiliza explícitamente la estructura GROW de T11."
+    },
+    {
+      "practica": "I13",
+      "teoricas": [],
+      "provisorio": false,
+      "nota": "No hay una ficha de Ventana de Johari. No reemplazarla por Radical Candor solo porque menciona feedback."
+    },
+    {
+      "practica": "I14",
+      "teoricas": ["T15"],
+      "provisorio": false,
+      "nota": "Es el trabajo de coherencia cultural que presenta T15."
+    },
+    {
+      "practica": "I15",
+      "teoricas": ["T15"],
+      "provisorio": false,
+      "nota": "Las cuatro claves figuran en T15. Conservar como pendiente la verificación de atribución que ya está escrita en ambas cartas."
+    }
+  ]
+}

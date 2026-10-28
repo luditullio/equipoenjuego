@@ -1,0 +1,25 @@
+# Solo publicar fuentes, cartas y recursos necesarios. No borra archivos.
+/*
+!/.gitignore
+!/.github/
+!/.github/**
+!/src/
+!/src/**
+!/recursos/
+!/recursos/**
+!/cartas/
+!/cartas/**
+!/package.json
+!/package-lock.json
+!/index.html
+!/vite.config.ts
+!/tsconfig.json
+!/tsconfig.node.json
+!/tsconfig.app.json
+node_modules/
+dist/
+.env
+.env.*
+*.pem
+*.key
+*.tsbuildinfo

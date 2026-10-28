@@ -1,0 +1,88 @@
+/* Biblioteca de cartas Teóricas: consulta directa, separada de la extracción. */
+
+.biblioteca__encabezado {
+  max-width: 48rem;
+  margin-bottom: 2rem;
+}
+
+.biblioteca__titulo {
+  font-size: clamp(1.8rem, 4vw, 2.6rem);
+  color: var(--violeta);
+}
+
+.biblioteca__bajada {
+  color: rgba(22, 43, 53, 0.78);
+}
+
+.biblioteca__grilla {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 1.1rem;
+  margin: 0 0 2.5rem;
+  padding: 0;
+  list-style: none;
+}
+
+.ficha-miniatura {
+  display: block;
+  width: 100%;
+  padding: 0;
+  border: 0;
+  background: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.ficha-miniatura__imagen {
+  display: block;
+  border-radius: 16px;
+  overflow: hidden;
+  border: 1px solid rgba(118, 84, 160, 0.28);
+  box-shadow: var(--sombra);
+  transition: transform var(--transicion), box-shadow var(--transicion);
+}
+
+.ficha-miniatura:hover .ficha-miniatura__imagen {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(118, 84, 160, 0.28);
+}
+
+.ficha-miniatura__imagen img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 827 / 1181;
+  object-fit: cover;
+}
+
+.ficha-miniatura__id {
+  display: block;
+  margin-top: 0.5rem;
+  font-family: var(--fuente-titulo);
+  font-weight: 700;
+  color: var(--violeta);
+}
+
+/* Versión clara de la barra de mazos (pantallas luminosas). */
+.navegacion-mazos--clara {
+  background: #fff;
+  border: var(--borde);
+  box-shadow: var(--sombra);
+}
+
+.navegacion-mazos--clara .navegacion-mazos__titulo {
+  color: rgba(22, 43, 53, 0.6);
+}
+
+.navegacion-mazos--clara .navegacion-mazos__boton {
+  background: #fff;
+  border-color: rgba(22, 43, 53, 0.14);
+  color: var(--tinta);
+}
+
+.navegacion-mazos--clara .navegacion-mazos__boton:hover {
+  background: rgba(22, 43, 53, 0.05);
+}
+
+.navegacion-mazos--clara .navegacion-mazos__detalle {
+  color: rgba(22, 43, 53, 0.62);
+}

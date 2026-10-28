@@ -1,0 +1,159 @@
+/* Pantalla de administración local. */
+
+.admin__encabezado {
+  max-width: 52rem;
+  margin-bottom: 2rem;
+}
+
+.admin__titulo {
+  font-size: clamp(1.8rem, 4vw, 2.4rem);
+}
+
+.admin__bajada {
+  color: rgba(22, 43, 53, 0.78);
+}
+
+.panel {
+  margin-bottom: 1.5rem;
+  padding: 1.5rem;
+  border-radius: var(--radio-medio);
+  background: #fff;
+  border: var(--borde);
+  box-shadow: var(--sombra);
+}
+
+.panel__titulo {
+  font-size: 1.3rem;
+}
+
+.panel__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 1rem;
+}
+
+.panel__detalle {
+  margin-top: 1rem;
+}
+
+.panel__detalle summary {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.lista-estado,
+.lista-detalle,
+.lista-pasos {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0;
+  padding-left: 1.15rem;
+}
+
+.lista-estado {
+  list-style: none;
+  padding-left: 0;
+}
+
+.lista-estado li.es-ok::before,
+.lista-estado li.es-error::before {
+  content: '';
+  display: inline-block;
+  width: 9px;
+  height: 9px;
+  margin-right: 0.5rem;
+  border-radius: 50%;
+  background: #1f6b4d;
+}
+
+.lista-estado li.es-error::before {
+  background: #c0392b;
+}
+
+.lista-detalle {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+.lista-detalle em {
+  color: rgba(22, 43, 53, 0.65);
+}
+
+.editor {
+  width: 100%;
+  padding: 0.9rem;
+  border: var(--borde);
+  border-radius: var(--radio-chico);
+  background: #fffdf9;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  resize: vertical;
+}
+
+.formulario {
+  display: grid;
+  gap: 0.3rem;
+  max-width: 34rem;
+  margin-top: 0.5rem;
+}
+
+.formulario select,
+.formulario input[type='file'] {
+  padding: 0.55rem 0.7rem;
+  border: var(--borde);
+  border-radius: var(--radio-chico);
+  background: #fff;
+}
+
+.destino {
+  margin-top: 1.25rem;
+  padding: 1rem;
+  border-radius: var(--radio-chico);
+  background: #f8f1e8;
+}
+
+.destino__etiqueta {
+  margin: 0;
+  font-weight: 600;
+}
+
+.destino__ruta {
+  display: block;
+  margin: 0.4rem 0;
+}
+
+.destino__carpeta {
+  font-size: 0.9rem;
+  color: rgba(22, 43, 53, 0.72);
+}
+
+.previsualizacion {
+  margin-top: 1.25rem;
+}
+
+.previsualizacion__imagen {
+  display: block;
+  width: min(240px, 60%);
+  margin-top: 0.5rem;
+  border-radius: 14px;
+  box-shadow: var(--sombra);
+}
+
+.previsualizacion__nota {
+  margin-top: 0.75rem;
+  font-size: 0.85rem;
+  color: rgba(22, 43, 53, 0.68);
+}
+
+.diagnostico {
+  margin-top: 1rem;
+  padding: 0.9rem 1.1rem;
+  border-radius: var(--radio-chico);
+  background: #f8f1e8;
+}
+
+.diagnostico p {
+  margin: 0;
+}

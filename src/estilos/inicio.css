@@ -1,0 +1,220 @@
+/* Página de inicio: pantallas luminosas, ilustraciones botánicas de fondo. */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(2rem, 6vw, 4.5rem);
+  border-radius: 32px;
+  background: linear-gradient(155deg, #fff9f1 0%, #fdf0e4 55%, #f7e3d2 100%);
+  border: 1px solid rgba(231, 101, 67, 0.16);
+  box-shadow: var(--sombra);
+}
+
+.hero__hojas {
+  position: absolute;
+  right: -40px;
+  bottom: -20px;
+  width: min(420px, 55%);
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.hero__formas {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -1px;
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.hero__texto {
+  position: relative;
+  max-width: 42rem;
+}
+
+.hero__volanta {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--terracota);
+}
+
+.hero__titulo {
+  font-size: clamp(2.4rem, 7vw, 4.2rem);
+  margin-bottom: 0.3em;
+}
+
+.hero__bajada {
+  font-size: clamp(1rem, 2.2vw, 1.2rem);
+  max-width: 34rem;
+  color: rgba(22, 43, 53, 0.82);
+}
+
+.hero__acciones {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 1.75rem;
+}
+
+.hero__dato {
+  font-size: 0.9rem;
+  color: rgba(22, 43, 53, 0.6);
+}
+
+.bloque {
+  margin-top: clamp(3rem, 7vw, 5rem);
+}
+
+.bloque:focus-visible {
+  outline: none;
+}
+
+.bloque__titulo {
+  font-size: clamp(1.6rem, 3.5vw, 2.3rem);
+}
+
+.bloque__bajada {
+  max-width: 46rem;
+  color: rgba(22, 43, 53, 0.75);
+}
+
+/* Modalidades ------------------------------------------------------------ */
+
+.modalidades {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(255px, 1fr));
+  gap: 1.25rem;
+}
+
+.modalidad {
+  padding: 1.5rem;
+  border-radius: var(--radio-medio);
+  background: #fff;
+  border: var(--borde);
+  border-top: 6px solid var(--color-mazo);
+  box-shadow: var(--sombra);
+}
+
+.modalidad__icono {
+  width: 46px;
+  height: 46px;
+}
+
+.modalidad__titulo {
+  margin-top: 0.75rem;
+  font-size: 1.3rem;
+  color: var(--color-mazo);
+}
+
+.modalidad__texto {
+  color: rgba(22, 43, 53, 0.82);
+}
+
+.modalidad__lista {
+  margin: 0;
+  padding-left: 1.1rem;
+  font-size: 0.94rem;
+  color: rgba(22, 43, 53, 0.72);
+}
+
+.como-jugar {
+  margin-top: 2rem;
+  padding: 1.75rem;
+  border-radius: var(--radio-medio);
+  background: var(--arena);
+}
+
+.como-jugar__titulo {
+  font-size: 1.25rem;
+}
+
+.como-jugar__pasos {
+  margin: 0;
+  padding-left: 1.25rem;
+  display: grid;
+  gap: 0.4rem;
+}
+
+/* Los tres mazos --------------------------------------------------------- */
+
+.mazos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(275px, 1fr));
+  gap: 1.25rem;
+}
+
+.mazo {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  border-radius: var(--radio-medio);
+  background: #fff;
+  border: var(--borde);
+  box-shadow: var(--sombra);
+}
+
+.mazo__encabezado {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-suave);
+}
+
+.mazo__icono {
+  width: 44px;
+  height: 44px;
+}
+
+.mazo__nombre {
+  margin: 0;
+  font-size: 1.35rem;
+  color: var(--color-mazo);
+}
+
+.mazo__cantidad {
+  margin: 0;
+  font-size: 0.85rem;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: rgba(22, 43, 53, 0.55);
+}
+
+.mazo__descripcion {
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+.mazo__modalidad {
+  font-size: 0.94rem;
+  color: rgba(22, 43, 53, 0.75);
+}
+
+.mazo__progreso {
+  margin-top: auto;
+  padding-top: 0.75rem;
+  font-size: 0.9rem;
+  color: rgba(22, 43, 53, 0.7);
+}
+
+.mazo__progreso-texto {
+  display: block;
+  margin-top: 0.4rem;
+}
+
+.mazo .boton--mazo {
+  margin-top: 1rem;
+}
+
+.nota-provisoria {
+  margin-top: 1.5rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: rgba(22, 43, 53, 0.6);
+}

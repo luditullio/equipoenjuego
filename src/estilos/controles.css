@@ -1,0 +1,99 @@
+/* Controles aprobados: acciones a la izquierda, carta central, vínculos a la derecha. */
+/* Tutorial: identificación por categoría y las dos caras de una misma carta. */
+.tutorial__elegir .tutorial__mazo {position:relative;display:block;width:30%;max-width:100px;height:144px;flex:none}
+.tutorial__elegir .tutorial__mazo:first-child {transform:rotate(-9deg) translateY(5px)}
+.tutorial__elegir .tutorial__mazo:last-child {transform:rotate(9deg) translateY(5px)}
+.tutorial__elegir .tutorial__mazo .tutorial__dorso {display:block;width:100%;max-width:100%;height:100%;object-fit:contain;transform:none}
+.tutorial__elegir .tutorial__mazo .tutorial__categoria {position:absolute;left:50%;top:30%;transform:translateX(-50%);width:34px;height:34px;max-width:none;object-fit:contain;filter:drop-shadow(0 1px 2px #0002)}
+.tutorial__revelar--dos-caras {gap:8px}
+.tutorial__revelar--dos-caras img {width:auto;max-width:43%;height:145px;object-fit:contain;transform:rotate(-5deg)}
+.tutorial__revelar--dos-caras img:last-child {transform:rotate(5deg)}
+.tutorial__flecha {font-size:1.2rem;color:var(--verde);flex:none}
+.sesion__encabezado,.sesion__pie {display:none}
+.lienzo--oscuro {padding-block:16px 20px}
+.sesion__cuerpo {grid-template-columns:minmax(0,1fr) 260px;gap:22px}
+.sesion__escenario {min-height:0;padding:56px 20px 20px;justify-content:center;--alto-carta:min(440px,calc(100dvh - 225px));}
+.sesion__cabecera-mesa {top:14px;left:20px;right:20px}
+.sesion__volanta {font-size:.85rem}
+.mesa {display:grid;grid-template-columns:minmax(140px,1fr) minmax(0,1.35fr) minmax(135px,1fr);gap:18px;align-items:center;}
+.mesa__controles {min-width:0;display:flex;flex-direction:column;gap:12px}
+.mesa__instruccion {font-size:.8rem;line-height:1.45;margin:0;color:var(--crema)}
+.mesa__acciones {display:flex;flex-direction:column;gap:9px;border-top:0;padding-top:20px}
+.mesa__controles>.ampliar-carta {margin-bottom:12px}
+.mesa__acciones .boton {width:100%;min-height:42px;padding:9px 8px;font-size:.8rem}
+.mesa__carta {width:min(100%,calc(var(--alto-carta)*.7));justify-self:center}
+.mesa__etiqueta {font-size:.75rem;margin-top:6px}
+.mesa__giro {display:block;font-size:.8rem;line-height:1.4;text-align:center;margin:7px 0 0;color:var(--crema)}
+.mesa__relaciones {min-width:0}
+.mesa .herramientas {width:100%;padding:0;border:0;border-radius:0;background:none;}
+.herramientas__titulo {display:flex;align-items:center;gap:7px;font-family:var(--fuente-texto);font-size:.86rem;line-height:1.4;margin:0 0 14px;color:var(--crema)}
+.herramientas__titulo svg {flex:none}
+.herramientas__bajada {position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.herramientas__lista {display:grid;gap:10px}
+.mesa .boton-teorica {width:100%;border-color:var(--crema);background:transparent;color:var(--crema);border-radius:8px;padding:9px;display:flex;align-items:start;flex-direction:column;gap:3px;}
+.herramientas__aviso,.mesa__agotado {font-size:.78rem;line-height:1.4}
+.ampliar-carta {display:inline-flex;align-items:center;justify-content:center;align-self:center;gap:8px;min-height:44px;padding:8px 4px;font:inherit;font-size:.85rem;font-weight:600;background:transparent;border:0;border-radius:0;text-decoration:none;color:inherit;cursor:pointer}
+.ampliar-carta:hover {opacity:.85;text-decoration:none}
+.ampliar-carta:focus-visible {outline:2px solid currentColor;outline-offset:5px}
+.mezcla__controles .mezcla__estado {text-align:center;width:100%;text-wrap:balance}
+.mezcla {display:grid;grid-template-columns:minmax(140px,1fr) minmax(0,1.35fr) minmax(135px,1fr);gap:18px;align-items:center;}
+.mezcla__pila {grid-column:2;grid-row:1;justify-self:center;width:min(80%,calc((var(--alto-carta) - 36px)*.7));margin:24px 0;}
+.mezcla__controles {grid-column:1;grid-row:1;text-align:left;min-width:0}
+.mezcla__estado {font-size:1.05rem;line-height:1.4;margin:0 0 18px}
+.mezcla__controles .boton {width:100%;min-width:0;min-height:46px;padding:10px 14px}
+.mezcla__controles .boton--parar {display:block;width:min(190px,100%);margin-inline:auto}
+.mezcla__pista {font-size:.76rem;line-height:1.5}
+.navegacion-mazos__titulo {font-size:1.4rem;margin-bottom:15px}
+.navegacion-mazos__lista>li {margin-bottom:16px;padding-bottom:16px}
+.navegacion-mazos__boton {grid-template-columns:65px minmax(0,1fr);gap:12px}
+.navegacion-mazos__dorso {width:65px}
+.navegacion-mazos__nombre {font-size:1.15rem}
+.ficha {display:grid;grid-template-columns:minmax(0,1fr) minmax(0,2.3fr) minmax(0,1fr);gap:16px;align-items:center}
+.ficha__controles {display:flex;flex-direction:column;gap:12px}
+.ficha__controles p {font-size:.8rem;line-height:1.5}
+.ficha__giro {font-size:.8rem;line-height:1.4;text-align:center;margin:7px 0 0}
+.ficha__carta {grid-column:2;width:min(100%,calc(min(490px,100dvh - 190px)*.7));margin:auto}
+.ficha__nota {grid-column:1/-1;margin:0}
+.zoom-carta {position:fixed;inset:0;z-index:100;background:#081e1ced;display:grid;place-items:center;padding:14px;color:var(--crema)}
+.zoom-carta__caja {width:min(1100px,100%);height:calc(100dvh - 28px);display:flex;flex-direction:column;min-height:0;outline:none}
+.zoom-carta__barra {display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding:0 0 12px;flex:none}
+.zoom-carta__acciones {display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.zoom-carta button {min-height:42px;min-width:42px;padding:8px 12px;border:1px solid #faf5ea80;border-radius:6px;background:transparent;color:var(--crema);cursor:pointer}
+.zoom-carta button:disabled {opacity:.4;cursor:default}
+.zoom-carta__ventana {flex:1;min-height:0;overflow:auto;overscroll-behavior:contain;touch-action:pan-x pan-y;}
+.zoom-carta__superficie {display:flex;width:max-content;height:max-content;min-width:100%;min-height:100%;padding:12px;box-sizing:border-box}
+.zoom-carta__superficie img {flex:none;object-fit:contain;max-width:none;max-height:none;display:block;margin:auto}
+@media(min-width:1101px) and (max-height:640px) {
+ .sesion__escenario {--alto-carta:min(380px,calc(100dvh - 225px));padding-top:48px}
+ .mesa__controles {gap:7px}.mesa__acciones {gap:6px;padding-top:9px}
+ .navegacion-mazos__dorso {width:50px}.navegacion-mazos__boton {grid-template-columns:50px 1fr}
+}
+@media(max-width:1100px) {
+ .sesion__cuerpo {grid-template-columns:minmax(0,1fr) 210px;gap:16px}
+ .mesa,.mezcla {grid-template-columns:145px minmax(0,1fr);gap:18px}
+ .mesa__relaciones {grid-column:1/-1;max-width:100%;}
+ .herramientas__lista {display:flex;flex-wrap:wrap}
+ .mesa__relaciones:empty {display:none}
+ .sesion__escenario {padding-inline:16px}
+}
+@media(max-width:760px) {
+ .sesion__cuerpo {grid-template-columns:1fr;gap:24px}
+ .sesion__escenario {padding:65px 16px 20px;--alto-carta:min(400px,calc(100dvh - 300px))}
+ .mesa {display:flex;flex-direction:column;gap:16px}
+ .mesa__carta {order:0;width:min(230px,65vw)}
+ .mesa__controles {order:1;width:100%;}
+ .mesa__relaciones {order:2;width:100%}
+ .mesa__acciones {flex-direction:row;flex-wrap:wrap}
+ .mesa__acciones .boton {flex:1 1 40%;width:auto}
+ .mesa__acciones .boton--principal {position:sticky;bottom:8px;z-index:3}
+ .mezcla {grid-template-columns:1fr;gap:8px}
+ .mezcla__pila {grid-column:1;grid-row:2;width:min(190px,48vw);margin:24px auto}
+ .mezcla__controles {grid-column:1;grid-row:1;text-align:center;width:100%}
+ .mezcla__controles .boton--parar {position:sticky;top:120px;z-index:3}
+ .mezcla__pista {margin-inline:auto}
+ .ficha {grid-template-columns:1fr;gap:12px}
+ .ficha__controles {order:1}.ficha__carta {grid-column:1;order:0;width:min(250px,75vw)}
+ .ficha__nota {order:2}.zoom-carta__barra {font-size:.8rem}
+ .navegacion-mazos__boton {grid-template-columns:55px 1fr}
+ .navegacion-mazos__dorso {width:55px}
+}
